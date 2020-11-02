@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to 'Ask', ask_path %> /
+      <%= link_to 'Answer', answer_path %>
+    </nav>
     <%= yield %>
+    <br>
+    <footer><%=Date.today.year %> All rights reserved</footer>
   </body>
 </html>
